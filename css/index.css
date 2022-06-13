@@ -1,0 +1,143 @@
+#top-menu .bg-light{
+    background-color: #ffff !;
+}
+
+@font-face {
+    font-family: "Cairo-Regular";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+body{
+    font-family: "Cairo-Regular", Arial, sans-serif;
+    background-color: #fafafa;
+}
+a{
+    color: #000;
+    text-decoration: none !important; /* Bech yetna7a line*/
+}
+button{ 
+    /* kifach tbedel les coleurs leftiradiyin mta3 les buttons f site lkol */
+    background-color: transparent !important;
+    color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+}
+#top-menu .video-icon{
+    background-color: #17a2b8;
+    color: #ffff;
+    border-radius: 15%;
+
+}
+.sidebar{
+    position: fixed; /* il va étre fixer sur l'écran ni importe qoui*/
+    z-index: 4; /* t7eb te8har few9 les elements lkol par rapport le numéro de z-index lo5reyn*/
+    right: -17rem;
+    transition: all 0.5s ease-in-out; /*s'applique à toutes le sproportiés modifiés avec un début & fin lents d'une durée 0.5s*/
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.sidebar:hover{
+    overflow-y: scroll; /* c'est une proprotié definir le mécanisme à utiliser lorsque le contenue depasse des bords haut à bas*/
+
+}
+.sidebar .purple{
+    color: #17a2b8;
+}
+.sidebar .list-group-item:hover{
+    color: #fff;
+    background-color: #17a2b8;
+
+}
+.sidebar .list-group-item:hover .purple{
+    color: #fff;
+}
+.sidebar .list-group-item{
+    width: 17rem;
+}
+#wrap .toggled .sidebar{
+    right: 0rem;
+}
+.sidebar::-webkit-scrollbar{
+    background: rgb(230, 230, 230);
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background: rgb(170, 170, 170);
+    width: 8px;
+}
+.layer{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+
+}
+.navbar .search-icon{
+    color: #17a2b8;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    left: 132px;
+    display: none;
+}
+button{
+    background-color: transparent !important;
+    color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+}
+button:hover{
+    background-color: #17a2b8 !important;
+    color: #fff !important;
+}
+#top-menu .fa-bars{ /*pour mettre sur l'icone cursor*/
+    cursor: pointer;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link
+{
+    color: #fff;
+    background-color: #17a2b8;
+}
+.navbar .login{
+    color: #17a2b8;
+}
+.modal .modal-header .close:hover{
+    color: #17a2b8 !important;
+    background-color: transparent !important;
+}
+input.form-control:focus,
+    button:focus{
+        box-shadow: none !important;
+    }
+
+.card .card-icons{
+    position: relative;
+}
+time {
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+    color: #fff;
+    background-color: black;
+    padding: 0 3px;
+}
+.card .fa-play{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    color: #2c3131c7;
+    display: none;
+}
+.card:hover .fa-play{
+    display: inline;
+}
+.card:hover{
+    transform: translateY(-.9%); /*Pour faire transitio sur contenue card à l'axe y -y*/
+}
+.card{
+    transition: transform .5s; /*durée du transition 5 seconde*/
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--1er méthode de utiliser bootstrap offline juste telecharger les fichiers -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">  -->
+
+    
+    
+    <title>يوتيوبي</title>
+    <!-- 1 er méthode de utiliser font-awesome offline juste telecharger les dossiers -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <!-- 2 éme méthode on copier le lien cdn ici -->
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <style>
+        .col {
+            background-color: red;
+            border: 1px solid #ffff;
+        }
+    </style>
+</head>
+<body class="mt-5 rtl"  >
+   <div id="top-menu">
+       <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rtl">
+            <a class="navbar-brand" href="index.html"> يوتيوبي</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-lg-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">الفيديوهات المقترحة <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ml-lg-3" href="#">المرفوعة حديثا</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link pl-0" href="#" tabindex="">الفيديوهات الرائجة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-info text-white d-inline-block" href="#" tabindex="" data-toggle="modal" data-target="#loginModal" > تسجيل الدخول </a>
+                </li>
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="ابحث عن" aria-label="Search">
+                <button onclick="location.href='search.html'" class="btn btn-outline-info  my-2 my-sm-0" type="submit">ابحث</button>
+              </div>
+            </div>
+          </nav>
+
+<!-- Modal -->
+<div class="modal  fade" id="loginModal" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+        <button type="button" class="close" data-dismiss="modal" >
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">البريد الإلكتروني :</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">كلمة السر:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="">نسيت كلمة السر</a>
+        <a href="" class="mx-auto">إنشاء حساب جديد</a>
+        <button type="button" class="btn btn-info">دخول</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--جسم الصفحة الرئيسية-->
+ <div class="watch-page pt-5">
+   <div class="container-fluid">
+   
+      <div class="card border-0 ">
+        <div class="row">
+          <div class="col-lg-6">
+              <video  controls poster="img/poster.png" autoplay muted loop class="w-100">
+              <track kind="captions" src=".vtt" srclang="ar" label="عربي" default>
+                <source src="video/watch1.mp4" type="video/webm">
+                <source src="video/watch1.mp4" type="video/mp4">
+                لايدعم متصفحك العنصر <code>video</code>
+              </video>
+          </div>
+          <div class="col-lg-6">
+            <div class="card-block">
+              <small class="text-muted">
+                <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+                <i class="fas fa-clock"></i> <span>قبل 5 أشهر</span>
+              </small>
+              <a href="channel.html" class="chanel-img">
+                <img src="img/ch2-logo.png" alt="chanel-image" class="rounded-circle my-3 mx-2" width="30" >
+                <span class="card-text">بلوارميديا</span>
+                
+              </a>
+              <a href="watch.html">
+                <h4> مقابلة  لمؤسس بلوار ميديا ...القصة والأرشيف </h4>
+              </a>
+              <p class="card-text"> بلّوار ميديا لتبقى بالقرب من موريتانيا : موقع موريتاني ثقافي يهدف الى احياء 
+                .التراث الوطني  وربط الجاليات بالوطن
+                نعمل في منصة  بلوار ميديا على إحياء التراث الموريتاني وتوثيق كل الأحداث الوطنية بالصوت والصورة، يتساوى في ذلك الديني مع الثقافي مع السياسي مع الفني مع الرياضي وعلى ان يكون الموقع جسرا يربط الجاليات بالوطن، و أن يكون عنوانا لكل الموريتانيين .
+                </p>
+              
+            </div>
+            <div class="watch-icons">
+              <div class="far fa-heart bg-secondary text-white p-1 rounded-circle mr-1" title="أحببت"></div>
+              <div class="far fa-clock bg-secondary text-white p-1 rounded-circle mr-1" title="المشاهدة لاحقا"></div>
+              <div class="far fa-share-square bg-secondary text-white p-1 rounded-circle mr-1" title="المشاركة"></div>
+              <div class="far fa-play-circle bg-secondary text-white p-1 rounded-circle mr-1" title="إعادة قائمة التشغيل"></div>
+              <span class="ml-3">الإبلاغ</span>
+              
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+</div>
+          <div class="row mt-4 px-2">
+            <div class="col-lg-7 order-1 order-lg-0">
+              <div class ="comments">
+                <div class="comments-details mb-3">
+                  <span>التعليقات 4</span>
+                  <span class="dropdown ">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" >
+                      الترتيب بحسب
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">التعليقات</a>
+                      <a class="dropdown-item" href="#">التاريخ الجديد</a>
+                      
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div class="public-comments mb-3">
+                <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="إضافة تعليق عام"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info mt-1" >تعليق</button> 
+              </div>
+              <div class="card">
+	    <div class="card-body">
+	        <div class="row">
+        	    <div class="col-md-2">
+        	        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+        	        <p class="text-secondary text-center">منذ 40 دقيقة</p>
+        	    </div>
+        	    <div class="col-md-10">
+        	        <p>
+        	            <a class="float-right" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>أحمد سالم</strong></a>
+        	            <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                        <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+        	            <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+        	            <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+        	            <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+
+        	       </p>
+        	       <div class="clearfix"></div>
+        	        <p>ههههه فيديو ظريف.</p>
+        	        <p>
+        	            <a class="float-right btn text-white btn-info ml-1 mr-3 mt-4 "> <i class="fa fa-reply"></i> رد</a>
+        	            <a class="float-right btn text-white btn-info mt-4 "> <i class="fa fa-heart"></i> أعجبني</a>
+        	       </p>
+        	    </div>
+	        </div>
+	        	<div class="card card-inner ml-4 mt-3">
+            	    <div class="card-body">
+            	        <div class="row">
+                    	    <div class="col-2">
+                    	        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                    	        <p class="text-secondary text-center ">منذ 20 دقيقة</p>
+                    	    </div>
+                    	    <div class="col-10 mt-3 mt-md-4">
+                    	        <p><a href="#"><strong>بلوار ميديا</strong></a></p>
+                    	        <p>شكرا جزيلا لك.</p>
+                    	        <p>
+                    	            
+                    	            <a class="float-right btn text-white btn-info mt-4"> <i class="fa fa-heart"></i> أعجبني</a>
+                    	       </p>
+                    	    </div>
+            	        </div>
+            	    </div>
+	            </div>
+	    </div>
+	</div>
+
+            </div>
+            <div class="col-lg-5  order-0 order-lg-1">
+              <p> الاقتراحات</p>
+              <div class="card p-2 mb-4">
+                <div class="row">
+                  <div class="col-sm-5">
+                     <img src="img/unnamed.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="card-block">
+                      
+                      <a href="watch.html">
+                        <P> مقابلة  لمؤسس بلوار ميديا ...القصة والأرشيف </P>
+                      </a>
+                      <small class="text-muted">
+                        <i class="fas fa-film"></i> <span>3 آلاف مشاهدة. 
+                          قبل 6 سنوات</span> 
+                        
+                      
+                        <a href="channel.html" class="chanel-img d-sm-block ">
+                         <img src="img/ch2-logo.png" alt="chanel-image" class="rounded-circle my-3 mx-2 " width="30" >
+                          <span class="card-text ">بلوارميديا</span>
+                        
+                        </a>
+                      </small>
+                      
+                      
+                    </div>
+                    
+                  </div>
+                  
+        
+                </div>
+              </div>
+              <div class="card p-2 mb-4">
+                <div class="row">
+                  <div class="col-sm-5">
+                     <img src="img/unnamed.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="card-block">
+                      
+                      <a href="watch.html">
+                        <P> مقابلة  لمؤسس بلوار ميديا ...القصة والأرشيف </P>
+                      </a>
+                      <small class="text-muted">
+                        <i class="fas fa-film"></i> <span>3 آلاف مشاهدة. 
+                          قبل 6 سنوات</span> 
+                        
+                      
+                        <a href="channel.html" class="chanel-img d-sm-block ">
+                         <img src="img/ch2-logo.png" alt="chanel-image" class="rounded-circle my-3 mx-2 " width="30" >
+                          <span class="card-text ">بلوارميديا</span>
+                        
+                        </a>
+                      </small>
+                      
+                      
+                    </div>
+                    
+                  </div>
+                  
+        
+                </div>
+              </div>
+              <div class="card p-2 mb-4">
+                <div class="row">
+                  <div class="col-sm-5">
+                     <img src="img/unnamed.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="card-block">
+                      
+                      <a href="watch.html">
+                        <P> مقابلة  لمؤسس بلوار ميديا ...القصة والأرشيف </P>
+                      </a>
+                      <small class="text-muted">
+                        <i class="fas fa-film"></i> <span>3 آلاف مشاهدة. 
+                          قبل 6 سنوات</span> 
+                        
+                      
+                        <a href="channel.html" class="chanel-img d-sm-block ">
+                         <img src="img/ch2-logo.png" alt="chanel-image" class="rounded-circle my-3 mx-2 " width="30" >
+                          <span class="card-text ">بلوارميديا</span>
+                        
+                        </a>
+                      </small>
+                      
+                      
+                    </div>
+                    
+                  </div>
+                  
+        
+                </div>
+              </div>
+            </div>
+
+          </div>
+       </div>
+   </div>
+     
+    </body>
+
+
+
+
+<!-- 2 éme méthode on copier le lien cdn font-awesome ici -->
+<!-- <script src="https://kit.fontawesome.com/2c3f18be66.js" crossorigin="anonymous"></script> -->
+<!--1er méthode de utiliser bootstrap offline juste telecharger les fichiers -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!-- 2 éme méthode on copier le lien cdn ici & obliger de connecter sur internet -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/usm/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+</body>
+</html>

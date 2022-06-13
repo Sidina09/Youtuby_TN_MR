@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوتيوبي</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <style>
+        .col {
+            background-color: red;
+            border: 1px solid #ffff;
+        }
+    </style>
+</head>
+<body class="mt-5 rtl"  >
+   <div id="top-menu">
+       <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rtl">
+            <a class="navbar-brand" href="index.html"> يوتيوبي</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-lg-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">الفيديوهات المقترحة <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ml-lg-3" href="#">المرفوعة حديثا</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link pl-0" href="#" tabindex="">الفيديوهات الرائجة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-info text-white d-inline-block" href="#" tabindex="" data-toggle="modal" data-target="#loginModal" > تسجيل الدخول </a>
+                </li>
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="ابحث عن" aria-label="Search">
+                <button onclick="location.href='search.html'" class="btn btn-outline-info  my-2 my-sm-0" type="submit">ابحث</button>
+              </div>
+            </div>
+          </nav>
+
+<!-- Modal -->
+<div class="modal  fade" id="loginModal" tabindex="-1" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+        <button type="button" class="close" data-dismiss="modal" >
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">البريد الإلكتروني :</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">كلمة السر:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="">نسيت كلمة السر</a>
+        <a href="" class="mx-auto">إنشاء حساب جديد</a>
+        <button type="button" class="btn btn-info">دخول</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="history-page pt-5">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-3">
+         <input type="search"  placeholder="ابحث  في التاريخ" class="from-control my-3 border-0" >
+         <hr>
+         <label>نوع السجل:</label>
+         <div class="list-group list-group-flush pr-0" id="list-tab">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" >سجل المشاهدة </a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" >سجل البحث</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" >التعليقات </a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" >المنتدى </a>
+         </div>
+         <label class="mt-4">التاريخ :</label>
+         <div class="list-group list-group-flush pr-0" id="list-tab">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" >منذ 24 ساعة</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" >منذ 3أيام</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" >منذ أسبوع</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" >منذ شهر</a>
+         </div>
+       </div>
+
+       <div class="col-lg-9">
+        <div class="col-12 my-3">
+          <div class="card">
+              <div class="card-horizontal d-md-flex d-block ">
+                  <div class="img-square-wrapper">
+                    <a href="watch.html"><img class="" src="img/rim.jpg" alt="Card image cap"></a>
+                  </div>
+                  <div class="card-body">
+                      <a href="watch.html"><h4 class="card-title">الجمهورية الإسلامية الموريتانية </h4></a>
+                      <p class="card-text">موريتانيا أو (الجمهورية الإسلامية الموريتانية)، هي دولة عربية وأفريقية، تقع في شمال غرب أفريقيا وعلى شاطئ المحيط الأطلسي، يحدها من الشمال كل من الجزائر والصحراء الغربية، ومن الجنوب السنغال، ومن الشرق والجنوب مالي، وكنقطة وصل بين شمال أفريقيا وجنوبها.</p>
+                      
+                        <small class="text-muted ">
+                          <i class="fa-solid fa-film  "></i><span>3الآف مشاهدة</span>
+                          <i class="fa-solid fa-clock"></i><span>قبل سنة واحدة</span>
+      
+                        </small>
+                      
+                      <a href="chanel.html" class="chanel-img">
+                        <img src="img/ch-logo.png" alt="chanel-image" class="rounded-circle my-3 mx-2" width="30" >
+                        <span class="card-text">FFRIM</span>
+                      </a>
+                    
+                  </div>
+              </div>
+              
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <div class="card">
+              <div class="card-horizontal d-md-flex d-block ">
+                  <div class="img-square-wrapper">
+                    <a href="watch.html"><img class="" src="img/rim.jpg" alt="Card image cap"></a>
+                  </div>
+                  <div class="card-body">
+                      <a href="watch.html"><h4 class="card-title">الجمهورية الإسلامية الموريتانية </h4></a>
+                      <p class="card-text">موريتانيا أو (الجمهورية الإسلامية الموريتانية)، هي دولة عربية وأفريقية، تقع في شمال غرب أفريقيا وعلى شاطئ المحيط الأطلسي، يحدها من الشمال كل من الجزائر والصحراء الغربية، ومن الجنوب السنغال، ومن الشرق والجنوب مالي، وكنقطة وصل بين شمال أفريقيا وجنوبها.</p>
+                      
+                        <small class="text-muted ">
+                          <i class="fa-solid fa-film  "></i><span>3الآف مشاهدة</span>
+                          <i class="fa-solid fa-clock"></i><span>قبل سنة واحدة</span>
+      
+                        </small>
+                      
+                      <a href="chanel.html" class="chanel-img">
+                        <img src="img/ch-logo.png" alt="chanel-image" class="rounded-circle my-3 mx-2" width="30" >
+                        <span class="card-text">FFRIM</span>
+                      </a>
+                    
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+          
+       </div>
+   </div>
+    
+    
+
+
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
